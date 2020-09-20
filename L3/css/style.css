@@ -1,0 +1,129 @@
+@charset "UTF-8";
+html {
+    font-size: 16px;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(80, 83, 94);
+    color: rgb(219, 217, 208);
+}
+nav {
+font-size: 2rem;
+
+}
+nav ul {
+margin: 0px;
+list-style: none;
+padding: 0;
+
+}
+
+nav a {
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+margin-bottom: 0.5rem;
+display: inline-block;
+}
+
+nav a:link, nav a:visited{
+    background-color: rgb(175, 178, 189);
+    color: rgb(53, 54, 54);
+
+}
+
+nav a:hover, nav a:active{
+    background-color: rgb(255, 204, 248);
+    color: rgb(69, 83, 83);
+
+}
+
+nav a.thisPage {
+    background-color: rgb(255, 0, 221); 
+    
+
+/* man kan även skriva 
+
+.thisPage {
+    background-color: rgb(255, 0, 221) !important; 
+
+*/
+}
+nav a.thisPage::after{
+
+    content: "--->";
+}
+
+main a:link, main a:visited{
+  
+    color: rgb(205, 211, 211);
+
+}
+
+main a:hover, main a:active{
+    background-color: rgb(255, 204, 248);
+    color: rgb(69, 83, 83);
+
+}
+
+main h2::after {
+
+    content: "- - - ";
+}
+
+header{
+    color: rgb(170, 175, 219);
+}
+
+#firstPageHeader{
+background-image: url(../img/clouds.jpg);
+background-size: cover;
+background-position: top;
+height: 100px;
+opacity: 1;
+}
+
+header h2 {
+
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+main ul{
+list-style: square;
+
+}
+
+main h1, main h2, main h3 {
+color: rgb(55, 61, 66);
+
+}
+
+#gallery img {
+
+    max-height: 300px;
+}
+
+img {
+    
+max-width: 100%;
+
+}
+#illustration {
+width: 250px;
+}
+
+#gallery {
+text-align: center;
+}
+
+.lines {
+    line-height: 2rem;
+}
+
+footer {
+    border-top: 3px solid rgb(39, 39, 46);
+    margin-top: 30px;
+}
